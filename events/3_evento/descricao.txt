@@ -1,0 +1,1 @@
+3. SBC -> Web: SBC faz POST de uma fotografia para o servidor. Dashboard faz um GET à API para obter a fotografia atual com um fetch do JS e atualiza conteudo.

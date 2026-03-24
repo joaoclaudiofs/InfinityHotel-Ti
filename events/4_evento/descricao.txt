@@ -1,0 +1,1 @@
+4. Web -> MCU: Botão na dashboard faz um POST via API usando JavaSript do estado do Som Ambiente (Desligado ou Ligado) para o servidor. E o MCU faz um GET do estado do Som Ambiente no servidor para Desligar/Ligar o buzzer localmente.

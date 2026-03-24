@@ -1,0 +1,1 @@
+1. SBC -> MCU: SBC lê um valor do teclado (0/1) e faz POST desse estado (Desligado/Ligado) do Som Ambiente para o servidor e liga um LED laranja durante 5 segundos. O MCU faz um GET do estado do Som Ambiente para Desligar/Ligar o buzzer localmente.

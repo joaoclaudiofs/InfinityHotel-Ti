@@ -1,0 +1,1 @@
+7. MCU -> SBC: MCU faz POST da temperatura/humidade para servidor, e o SBC faz um GET da temperatura via API, apresenta esse valor com um print()) e se temperatura for superior a 25 graus faz POST com o estado Ligado do Ar Condicionado para servidor. O SBC ainda faz um GET do valor do Ar Condicionado e caso seja Ligado acende um LED com a cor azul.

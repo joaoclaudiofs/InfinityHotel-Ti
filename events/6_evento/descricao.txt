@@ -1,0 +1,1 @@
+6. MCU -> Web: MCU faz POST via API da temperatura e humidade para servidor e a Dashboard lê esse valor através do fetch do JS e apresenta esse valor com um innerText.

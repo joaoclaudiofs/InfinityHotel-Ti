@@ -1,0 +1,1 @@
+2. SBC -> Web: SBC lê um dispositivo (sensor/atuador) e um valor a partir do  teclado e faz POST via API do novo valor/estado do dispositivo escolhido. O dashboard Web faz um GET à API com a função fetch do JavaScript e obtém os novos dados do dispositivo e atualiza o seu conteúdo, mostrando o novo valor, a data e poderá alterar imagens de acordo com o valor obtido.

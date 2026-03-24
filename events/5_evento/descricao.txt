@@ -1,0 +1,1 @@
+5. Web -> SBC: Botão na dashboard faz um POST via API usando JavaScript do estado do Som Ambiente (Desligado ou Ligado) para o servidor. E o SBC faz um GET do estado do Som ambiente no servidor para Desligar/Ligar localmente um LED com a cor verde.

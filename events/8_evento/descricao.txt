@@ -1,0 +1,1 @@
+8. MCU -> SBC: MCU faz POST via API do sensor de fumo para servidor. SBC faz GET do sensor fumo via API, caso seja muito alto acende localmente um LED com a cor vermelha e faz um POST do Sprinkler com o estado Ligado para a API.

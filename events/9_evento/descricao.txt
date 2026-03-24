@@ -1,0 +1,4 @@
+SBC->WEB
+SBC: Ao ser detetado o dispositivo bluetooth na proximidade especifico, 
+faz um GET à lotacao, incrementa um e faz POST do novo valor.
+WEB: Com um GET à API usando o fetch do JS, atualiza o conteúdo da lotação.
