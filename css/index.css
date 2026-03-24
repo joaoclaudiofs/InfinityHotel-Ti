@@ -1,0 +1,13 @@
+body {
+    /* background-image: linear-gradient(to top, #DCDCDC 100%, #969696 0%); */
+    /* background-image: url("../img/bed-8504210_1920.jpg"); */
+    /* background-color: #eab184; */
+    background-image: url("../img/hotelBackground.jpg");
+}
+
+h2 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}

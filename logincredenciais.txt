@@ -1,0 +1,9 @@
+Joao:$2y$10$F.1BpwJlrqhgrUlPi7zKDepCd2.nm4pLPPAmSkFNm2xwBoyYuVBXK:1
+Tiago:$2y$10$dUoGf63olfPxXU26tGvu5uGNPWCbZL7ht1CI7MQbuE7bqgZNnDD1C:
+Tiago:$2y$10$4B9/ot2A0xMCUv656vpWGOyJnVOfWpaNuyIoKmVsVqCwqCX8/CFXG:
+func:$2y$10$72IKOlyRUrV1Tw3oO4JihOH7v2OC0FBSxb/vHjByrK.biKvXyuP5.:1
+func1:$2y$10$NqyWPWXBFrn32Hfk0QVkVOtV2.oub3/m27qLbGoUV8j2v.4UgdGpy:1
+func1:$2y$10$o61MzixZtd5Ew52huiZDRuE5tmI0ZS8nnKvlNuv67QUz3pkOpMQZ2:1
+admin:$2y$10$OO/j80x0oKAEQnACjEaPVesDL65w.ZWfp6l3eulUXLhX1uKwADaXG:2
+hosp:$2y$10$AE7JVmo8P5AgoOc5KjnUPuqZoRv5m0YMu2IHcEgqdmYW3nfvi/BC.:0
+bla :$2y$10$.z3XpLW0Y.U6I22ZUQnZKeNeb.LCCqzJ6rqaHdGpCYJNrkQtUoveO:0

@@ -1,0 +1,80 @@
+body {
+    /* background-image: linear-gradient(to top, #DCDCDC 100%, #969696 0%); */
+    background-image: url("../img/loginBackground.jpg");
+}
+
+
+.login-button {
+    background-color: rgb(241, 181, 163);
+}
+
+.login-color {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(241, 181, 163);
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(233, 215, 208);
+}
+
+.field-text {
+    color: white;
+}
+
+.rectangule-color {
+    /* background-color: rgba(225, 205, 205, 0.626); */
+    background-color: rgb(191 148 131 / 40%);
+}
+
+.center-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-lg {
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.form-control-lg {
+    font-size: 16px;
+    padding: 25px 20px;
+}
+
+.image-size-small {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.image-size-small img {
+    width: 140px;
+    margin-bottom: -70px;
+}
+
+.icon-camera {
+    position: absolute;
+    right: -1px;
+    top: 21px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

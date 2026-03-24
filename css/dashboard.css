@@ -1,0 +1,16 @@
+body {
+    /* background-color: #eab184; */
+    background-color: #254a62;
+}
+
+/* Conteúdo da dashboard */
+.content {
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 20px;
+    z-index: 0;
+}
+
+h1 {
+    color: white;
+}

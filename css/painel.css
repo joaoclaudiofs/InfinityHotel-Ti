@@ -1,0 +1,273 @@
+/* Ideia de flip card retirada de w3schools */
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
+
+/* Smartphones */
+@media (max-width: 767px) {
+    .meu_cartao {
+        max-width: 100%;
+        margin: 10px auto !important;
+    }
+
+    .content {
+        margin: 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1000px) {
+    .meu_cartao {
+        /* calculo de metade da largura do elemento - 20 pixeis */
+        max-width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+/* Tablets Maiores */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .meu_cartao {
+        max-width: calc(50% - 20px);
+        margin: 10px auto !important;
+
+    }
+}
+
+.meu_cartao {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 10px;
+    width: 100%;
+    max-width: 290px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meu_cartao_inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.meu_cartao:hover .meu_cartao_inner {
+    transform: rotateY(180deg);
+}
+
+.meu_cartao_frente,
+.meu_cartao_tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.meu_cartao_tras {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meu_cartao_tras .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: to center items horizontally */
+    justify-content: center; /* Optional: to center items vertically */
+}
+
+
+.imagem_cartao {
+    margin: 10px;
+    width: 20px;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.titulo_cartao {
+    color: darkgoldenrod;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.value_cartao {
+    font-size: large;
+    font-weight: bold;
+}
+
+.info_cartao {
+    font-size: 16px;
+    color: gray;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.dashboard-table th {
+    background-color: rgb(32, 121, 148);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+    background-color: rgb(230, 230, 230);
+}
+
+.dashboard-table tbody tr:hover {
+    background-color: rgba(111, 124, 166, 0.716);
+}
+
+
+.alto {
+    background-color: #FF8A80;
+}
+
+.normal {
+    background-color: #A5D6A7;
+
+}
+
+.baixo {
+    background-color: #81D4FA;
+}
+
+.ativo {
+    background-color: #FFF176;
+}
+
+.desativado {
+    background-color: rgb(53, 111, 137);
+    color: pink;
+}
+
+.toggler {
+    width: 72px;
+    margin: 40px auto;
+}
+
+.toggler input {
+    display: none;
+}
+
+.toggler label {
+    display: block;
+    position: relative;
+    width: 72px;
+    height: 36px;
+    border: 1px solid #d6d6d6;
+    border-radius: 36px;
+    background: #e4e8e8;
+    cursor: pointer;
+}
+
+.toggler label::after {
+    display: block;
+    border-radius: 100%;
+    background-color: #d7062a;
+    content: '';
+    animation-name: toggler-size;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-out;
+    animation-direction: forwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+.toggler label::after,
+.toggler label .toggler-on,
+.toggler label .toggler-off {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 26px;
+    height: 26px;
+    transform: translateY(-50%) translateX(-50%);
+    transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.toggler input:checked+label::after,
+.toggler input:checked+label .toggler-on,
+.toggler input:checked+label .toggler-off {
+    left: 75%;
+}
+
+.toggler input:checked+label::after {
+    background-color: #50ac5d;
+    animation-name: toggler-size2;
+}
+
+.toggler .toggler-on,
+.toggler .toggler-off {
+    opacity: 1;
+    z-index: 2;
+}
+
+.toggler input:checked+label .toggler-off,
+.toggler input:not(:checked)+label .toggler-on {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.toggler .path {
+    fill: none;
+    stroke: #fefefe;
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+@keyframes toggler-size {
+
+    0%,
+    100% {
+        width: 26px;
+        height: 26px;
+    }
+
+    50% {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@keyframes toggler-size2 {
+
+    0%,
+    100% {
+        width: 26px;
+        height: 26px;
+    }
+
+    50% {
+        width: 20px;
+        height: 20px;
+    }
+}
